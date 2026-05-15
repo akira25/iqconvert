@@ -4,13 +4,27 @@
 for converting IQ-Data from one format into another one. It helps you when
 working with iq data from different sources and origins
 
+> [!TIP]
+> Main Repository: [codeberg.org/akira25/iqconvert](https://codeberg.org/akira25/iqconvert)
+
 ## Work in Progress
 
 This tool is a work in progress. It does not support all conversions between
 all formats at the moment. If you need another conversion, feel free to add it
 to the code and hand in a merge request, or open an issue.
 
-## Examples
+## Building
+
+To build this tool, you need a recent [rust-toolchain](https://rustup.rs/) and
+cargo:
+
+```sh
+$ git clone https://codeberg.org/akira25/iqconvert.git
+$ cd iqconvert
+$ cargo build --release
+```
+
+## Usage Examples
 
 Converting a [SatNOGS](https://network.satnogs.org/) IQ-File to replay it in
 [gqrx](https://www.gqrx.dk/):
